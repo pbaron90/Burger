@@ -1,8 +1,5 @@
-// Dependencies
 var connection = require("./connection.js");
 
-// Object Relational Mapper
-// 	Here we pass in query parameters for all 3 methods, including callbacks, to receive the data from the model
 var orm = {
 	selectAll: function(tableInput, cb) {
 		var queryString = "SELECT * from ??";
@@ -33,5 +30,4 @@ var orm = {
 	}
 };
 
-// Export ORM
 module.exports = orm;

@@ -1,7 +1,5 @@
-// Dependencies
 var orm = require("../config/orm.js");
 
-// We pass in query parameters as required by our ORM and also a callback to receive data
 var burger = {
 	selectAll: function(cb) {
 		orm.selectAll("burgers", function(res) {
@@ -20,5 +18,4 @@ var burger = {
 	}
 };
 
-// Export
 module.exports = burger;
